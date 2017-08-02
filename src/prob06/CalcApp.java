@@ -37,7 +37,7 @@ public class CalcApp {
 				Calc add = new Add();
 				add.setValue(a, b);
 				add.calculate();
-				*/
+				*/ 
 				result = calc( new Add(), a, b );
 				System.out.println(">> "+result);
 				break;
