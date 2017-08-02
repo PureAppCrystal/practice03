@@ -27,34 +27,37 @@ public class CalcApp {
 			
 			//연산 법칙에 따라 스위치문을 돌린다
 			switch( operator ) {
-			case "+" : {
-				/*
-				Add add = new Add();
-				add.setValue(a,b);
-				int result = add.calculate();
-				*/
-				/*
-				Calc add = new Add();
-				add.setValue(a, b);
-				add.calculate();
-				*/ 
-				result = calc( new Add(), a, b );
-				System.out.println(">> "+result);
-				break;
-			} case "-" : {
-				result = calc( new Sub(), a, b );
-				System.out.println(">> "+result);
-				break;
-			} case "*" : {
-				result = calc( new Mul(), a, b );
-				System.out.println(">> "+result);
-				break;
-			} case "/" : {
-				result = calc( new Div(), a, b );
-				System.out.println(">> "+result);
-				break;
-			}
-			
+				case "+" : {
+					/*
+					Add add = new Add();
+					add.setValue(a,b);
+					int result = add.calculate();
+					 */
+					/*
+					Calc add = new Add();
+					add.setValue(a, b);
+					add.calculate();
+					 */ 
+					result = calc( new Add(), a, b );
+					System.out.println(">> "+result);
+					break;
+				} case "-" : {
+					result = calc( new Sub(), a, b );
+					System.out.println(">> "+result);
+					break;
+				} case "*" : {
+					result = calc( new Mul(), a, b );
+					System.out.println(">> "+result);
+					break;
+				} case "/" : {
+					result = calc( new Div(), a, b );
+					System.out.println(">> "+result);
+					break;
+				} default : {
+					System.out.println( ">> 알 수 없는 연산입니다." );
+					break;
+				}
+				
 			}
 		}
 		
